@@ -52,14 +52,14 @@ validated = true
 for restricted_resources as _, type {
   # Find all resources of the given type
   all_resources = config.find_resources_by_type(type)
-    print(all_resources)
+  print(all_resources)
   # Iterate over the resources to find module source
   for all_resources as address, r {
 
     # Get module source
     module_address = r.module_address
-    module_source = config.get_ancestor_module_source(module_address)
-    #module_source = config.get_module_source(module_address)
+    #module_source = config.get_ancestor_module_source(module_address)
+    module_source = config.get_module_source(module_address)
 
     # Initialize found_match to false. We'll flip to true if we find a match.
     found_match = false
