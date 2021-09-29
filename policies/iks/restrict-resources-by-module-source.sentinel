@@ -22,9 +22,6 @@ import "strings"
 
 # Resources that should be restricted
 param restricted_resources default [
-    "intersight_kubernetes_cluster_profile",
-    "intersight_kubernetes_node_group_profile",
-    #"intersight_kubernetes_virtual_machine_infrastructure_provider",
 ]
 
 # Allowed Public and Private Module Registry Modules
@@ -52,8 +49,8 @@ validated = true
 for restricted_resources as _, type {
   # Find all resources of the given type
   all_resources = config.find_resources_by_type(type)
-  print("printing all_resources")
-  print(all_resources)
+  print("printing type")
+  print(type)
   # Iterate over the resources to find module source
   for all_resources as address, r {
 
