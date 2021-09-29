@@ -16,7 +16,7 @@ module "tfrun-functions" {
 
 
 policy "allowed-resources" {
-    source = "./allowed-providers.sentinel"
+    source = "./allowed-resources.sentinel"
     enforcement_level = "advisory"
 }
 
