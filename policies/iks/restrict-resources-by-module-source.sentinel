@@ -42,7 +42,7 @@ param restricted_resources default [
 #   The third segment should be the provider of the module.
 # Do not add module sub-directories prefaced with "//" after the above segments.
 param allowed_module_sources default [
-  "terraform-cisco-modules/iks/intersight/",
+  "terraform-cisco-modules/iks/intersight",
 ]
 
 # Initialize validated. We'll flip to false if we find a violation.
