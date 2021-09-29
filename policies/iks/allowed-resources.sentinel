@@ -17,7 +17,8 @@ allowed_list = ["intersight_kubernetes_addon_policy",
                 "intersight_kubernetes_virtual_machine_infra_config_policy",
                 "intersight_kubernetes_cluster_profile",
                 "intersight_kubernetes_version_policy",
-                "intersight_kubernetes_sys_config_policy"]
+                "intersight_kubernetes_sys_config_policy",
+                "intersight_ippool_pool"]
 
 # Get all Resources
 allResources = config.find_all_resources()
