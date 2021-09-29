@@ -27,7 +27,7 @@ policy "prevent-destruction-of-prohibited-resources" {
 }
 
 
-policy "restrict-resources-by-module-source" {
-    source = "./restrict-resources-by-module-source.sentinel"
+policy "rrequire-all-resources-from-pmr" {
+    source = "./require-all-resources-from-pmr.sentinel"
     enforcement_level = "advisory"
 }
