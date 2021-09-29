@@ -6,8 +6,18 @@
 import "tfconfig-functions" as config
 
 # List of allowed resources
-allowed_list = ["aws_instance", "azurerm_virtualmachine",
-            "google_compute_instance"]
+allowed_list = ["intersight_kubernetes_addon_policy", 
+                "intersight_kubernetes_cluster_addon_profile", 
+                "intersight_kubernetes_trusted_registries_policy",
+                "intersight_kubernetes_node_group_profile", 
+                "intersight_kubernetes_container_runtime_policy",
+                "intersight_kubernetes_network_policy", 
+                "intersight_kubernetes_virtual_machine_infrastructure_provider",
+                "intersight_kubernetes_virtual_machine_instance_type",
+                "intersight_kubernetes_virtual_machine_infra_config_policy",
+                "intersight_kubernetes_cluster_profile",
+                "intersight_kubernetes_version_policy",
+                "intersight_kubernetes_sys_config_policy"]
 
 # Get all Resources
 allResources = config.find_all_resources()
