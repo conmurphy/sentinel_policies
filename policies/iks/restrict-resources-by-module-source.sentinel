@@ -114,6 +114,8 @@ for restricted_resources as _, type {
 
       print("module_source")
       print(module_source)
+      print("ams_reg")
+      print(ams_reg)
       # Test module_source against the regex
       if module_source matches ams_reg {
         #print("module_source:", module_source)
