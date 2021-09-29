@@ -22,6 +22,9 @@ import "strings"
 
 # Resources that should be restricted
 param restricted_resources default [
+    "intersight_kubernetes_cluster_profile",
+    "intersight_kubernetes_node_group_profile",
+    "intersight_kubernetes_virtual_machine_infrastructure_provider_temp",
 ]
 
 # Allowed Public and Private Module Registry Modules
