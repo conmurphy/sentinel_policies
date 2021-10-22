@@ -30,4 +30,5 @@ policy "prevent-destruction-of-prohibited-resources" {
 policy "require-all-resources-from-private-module-registry" {
     source = "./require-all-resources-from-pmr.sentinel"
     enforcement_level = "advisory"
+    #enforcement_level = "hard-mandatory"
 }
