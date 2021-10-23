@@ -6,7 +6,7 @@
 import "tfplan-functions" as plan
 
 # List of prohibited resources
-prohibited_list = ["aws_vpc", "azurerm_virtual_network", "google_compute_network"]
+prohibited_list = ["intersight_kubernetes_cluster_profile", "intersight_kubernetes_node_group_profile"]
 
 # Get all Resources
 resourcesBeingDestroyed = plan.find_resources_being_destroyed()
